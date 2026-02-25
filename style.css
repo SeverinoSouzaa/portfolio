@@ -107,7 +107,7 @@ h1 {
 }
 
 .sobre-titulo {
-font-size: 3rem;
+font-size: clamp(28px, 5vw, 45px);
 color: var(--claro);
 text-align: center;
 margin-bottom: 20px;
@@ -125,7 +125,7 @@ margin-bottom: 20px;
 }
 
 .sobre-paragrafo{
-    text-align: justify;
+    text-align: left;
     font-size: 1rem;
    
 }
@@ -137,8 +137,8 @@ margin-bottom: 20px;
 
 .projetos-titulo{
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+    font-size: clamp(28px, 5vw, 45px);
+    margin-bottom: 30px;
     
 
 }
@@ -212,6 +212,7 @@ padding: 6rem 2rem;
 .campo-form {
     width: 100%;
     padding: 1rem;
+    font-size: 16px;
     background-color: rgba(255, 255, 255, 0.05) ;
     border-radius: 8px;
     color: var(--claro);
@@ -273,8 +274,39 @@ padding: 6rem 2rem;
     
 }
 
+footer{
+    width: 100%;
+    background-color: var(--vidro);
+    border: 1px solid var(--vidro);
+    padding:15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
 
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primaria);
+    transition: 0.3s ease;
+    border: 2px solid var(--primaria);
+    border-radius: 50px;
+    padding: 4px;
+   
+   
+}
 
+.social-icon:hover {
+     transform: scale(1.2) translateY(-4px);
+     cursor: pointer;
+     box-shadow: 0px 0px 7px var(--claro);
+     color: var(--claro);
+     border-color: var(--vidro);
+    
+}
 
 
 
